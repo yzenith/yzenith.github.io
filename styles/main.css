@@ -1,0 +1,9 @@
+* {
+  padding: 0px;
+  margin: 0px; }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: lightseagreen; }
