@@ -18,8 +18,13 @@ var browserSync = require('browser-sync').create();
 //     .pipe(gulp.dest('dist/images'));
 // });
 
+gulp.task('cp',function(){
+  return gulp.src(['js/main.js','assets/*'], {base: '.'})
+        .pipe(gulp.dest('..'));
+});
+
 // browser-sync
-gulp.task('browser-sync',['build','sass'], function() {
+gulp.task('browser-sync',['build','sass','cp'], function() {
     browserSync.init({
         server: {
             baseDir: ".."
@@ -65,6 +70,7 @@ gulp.task('rebuild',['build'],function(){
 gulp.task('watch',function(){
   gulp.watch(['**/*.html'],['rebuild']);
   gulp.watch(['styles/*.scss'],['sass']);
+  gulp.watch(['js/main.js'], ['cp']);
 })
 
 gulp.task('default', ['browser-sync','watch']);

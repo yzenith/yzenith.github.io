@@ -1,0 +1,19 @@
+$primary-color-dark:   #0097A7;
+$primary-color:        #00BCD4;
+$primary-color-light:  #B2EBF2;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #FF4081;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
+
+*{
+  padding:0px;
+  margin:0px;
+  // make header same height even though plus padding or border
+  box-sizing: border-box;
+}
+body{
+  font-smoothing:antialiased;
+  color:$secondary-text-color;
+}
