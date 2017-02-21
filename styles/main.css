@@ -39,7 +39,7 @@ body {
     padding: 10px 15px;
     border-radius: 4px; }
   .header h1 {
-    font-size: 25px; }
+    font-size: 22px; }
 
 .header > * {
   text-align: center;
@@ -158,3 +158,64 @@ body {
 @media (min-width: 1200px) {
   .skills .card {
     width: calc(33.33333% - 40px); } }
+
+.box {
+  margin: 0 auto;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .box .about {
+    margin: 10px auto;
+    padding: 10px;
+    width: calc(100% - 20px);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    background-image: -webkit-linear-gradient(260deg, #FFFFFF 0%, #B2EBF2 100%);
+    background-image: linear-gradient(-170deg, #FFFFFF 0%, #B2EBF2 100%); }
+    .box .about h1 {
+      font-size: 20px;
+      text-align: center; }
+    .box .about .description {
+      text-align: left;
+      padding: 5px; }
+    .box .about .image {
+      text-align: center; }
+  .box .skills {
+    margin: 10px auto;
+    padding: 10px;
+    width: calc(100% - 20px);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    background-image: -webkit-linear-gradient(260deg, #FFFFFF 0%, #B2EBF2 100%);
+    background-image: linear-gradient(-170deg, #FFFFFF 0%, #B2EBF2 100%); }
+    .box .skills h1 {
+      font-size: 20px;
+      text-align: center; }
+    .box .skills hr {
+      margin-bottom: 15px; }
+    .box .skills .detail {
+      margin: 5px auto;
+      text-align: center; }
+      .box .skills .detail img {
+        display: none;
+        padding: 5px; }
+      .box .skills .detail #skills_0 {
+        display: block;
+        margin: 0 auto; }
+  .box .learn {
+    margin: 10px auto;
+    padding: 10px;
+    width: calc(100% - 20px);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    background-image: -webkit-linear-gradient(260deg, #FFFFFF 0%, #B2EBF2 100%);
+    background-image: linear-gradient(-170deg, #FFFFFF 0%, #B2EBF2 100%); }
+    .box .learn h1 {
+      font-size: 20px;
+      text-align: center; }
+    .box .learn ul {
+      list-style: none; }

@@ -1,0 +1,74 @@
+.box {
+  margin: 0 auto;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // about css
+  .about {
+    margin: 10px auto;
+    padding: 10px;
+    width: calc(100% - 20px);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    background-image: linear-gradient(-170deg, $primary-color-text 0%, $primary-color-light 100%);
+
+    h1 {
+      font-size: 20px;
+      text-align: center;
+    }
+    .description {
+      text-align: left;
+      padding: 5px;
+    }
+    .image {
+      text-align: center;
+    }
+  }
+  // skills css
+  .skills {
+    margin: 10px auto;
+    padding: 10px;
+    width: calc(100% - 20px);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    background-image: linear-gradient(-170deg, $primary-color-text 0%, $primary-color-light 100%);
+
+    h1 {
+      font-size: 20px;
+      text-align: center;
+      // display: block;
+    }
+    hr {
+      margin-bottom: 15px;
+    }
+    .detail {
+      margin: 5px auto;
+      text-align: center;
+
+      img {
+        display: none;
+        padding: 5px;
+      }
+      #skills_0 {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+  // learn area css
+  .learn {
+    margin: 10px auto;
+    padding: 10px;
+    width: calc(100% - 20px);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    background-image: linear-gradient(-170deg, $primary-color-text 0%, $primary-color-light 100%);
+    h1 {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+    }
+  }
+
+}

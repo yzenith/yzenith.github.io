@@ -12,8 +12,11 @@ $divider-color:        #BDBDBD;
   margin:0px;
   // make header same height even though plus padding or border
   box-sizing: border-box;
+  
 }
 body{
   font-smoothing:antialiased;
   color:$secondary-text-color;
+
+
 }
