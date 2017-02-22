@@ -12,13 +12,18 @@ $(function(){
   // set timer
   timer = setInterval(autoRun,2500);
 
-    // $('.detail').mouseover(function(){
-    //   clearInterval(timer);
-    //
-    //   var c = $(this).index();
-    //
-    //   $('.detail>img').eq(c).show().siblings('img').hide();
-    // })
+  // JS for leaning section
+  var b = 0;
+  setInterval(function(){
+    b++;
 
-  // })
+    if(b==7){
+      $('.learn ul').css({'margin-top':'0px'});
+      b = 1;
+
+    };
+    var up = b*-128;
+    $('.learn ul').animate({'margin-top':up+'px'},1000);
+  },1500);
+
 })
