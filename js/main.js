@@ -1,3 +1,4 @@
+
 $(function(){
   var c = 0;
   function autoRun(){
@@ -19,7 +20,7 @@ $(function(){
 
     if(b==7){
       $('.learn ul').css({'margin-top':'0px'});
-      b = 1;
+      b = 0;
 
     };
     var up = b*-128;

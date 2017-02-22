@@ -1,29 +1,30 @@
 
 $(function(){
   var c = 0;
-
   function autoRun(){
     c++;
 
     (c==8)?c=0:c;
 
     // show up photos
-    $('.skills>img').eq(c).fadeIn(400).siblings('img').hide()
+    $('.detail>img').eq(c).fadeIn(800).siblings('img').hide();
   }
 
   // set timer
-  timer = setInterval(autoRun,1000);
+  timer = setInterval(autoRun,2500);
 
-    $('.skills').mouseover(function(){
-    clearInterval(timer);
+  // JS for leaning section
+  var b = 0;
+  setInterval(function(){
+    b++;
 
-    var c = $(this).index();
+    if(b==7){
+      $('.learn ul').css({'margin-top':'0px'});
+      b = 0;
 
-    $('.skills>img').eq(c).show().siblings('.skills>img').hide();
-  })
+    };
+    var up = b*-128;
+    $('.learn ul').animate({'margin-top':up+'px'},1000);
+  },1500);
 
-  //鼠标移出的效果，这里面有个效果不对，就是移出时，会从往后的li开始继续轮播，有时又没有
-  $('.skills').mouseout(function(){
-    timer = setInterval(autoRun,1000);
-  })
 })
