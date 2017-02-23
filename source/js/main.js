@@ -1,16 +1,15 @@
 
 $(function(){
+  // JS for Comfortable area
   var c = 0;
   function autoRun(){
     c++;
 
     (c==8)?c=0:c;
 
-    // show up photos
     $('.detail>img').eq(c).fadeIn(800).siblings('img').hide();
   }
 
-  // set timer
   timer = setInterval(autoRun,2500);
 
   // JS for leaning section
@@ -26,5 +25,10 @@ $(function(){
     var up = b*-128;
     $('.learn ul').animate({'margin-top':up+'px'},1000);
   },1500);
+
+  // JS for show menu area
+  $('#setting').click(function(){
+    $('#menu').toggle();
+  });
 
 })

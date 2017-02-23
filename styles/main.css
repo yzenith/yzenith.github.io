@@ -46,6 +46,24 @@ body {
   line-height: 80px;
   color: #FFFFFF; }
 
+.show {
+  position: fixed;
+  top: 78px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  opacity: 1;
+  box-sizing: border-box;
+  background-color: #333;
+  display: none; }
+  .show a {
+    display: block;
+    text-decoration: none;
+    padding: 35px;
+    color: #FFFFFF; }
+
 .footer {
   background-color: #00BCD4;
   height: 80px;
