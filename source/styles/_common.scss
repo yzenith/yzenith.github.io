@@ -14,7 +14,7 @@ $divider-color:        #BDBDBD;
   box-sizing: border-box;
 }
 body{
-  font-smoothing:antialiased;
+  -webkit-font-smoothing: antialiased;
   color:$secondary-text-color;
 
 

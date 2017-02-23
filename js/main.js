@@ -17,7 +17,7 @@ $(function(){
   setInterval(function(){
     b++;
 
-    if(b==7){
+    if(b==8){
       $('.learn ul').css({'margin-top':'0px'});
       b = 0;
 
@@ -25,10 +25,5 @@ $(function(){
     var up = b*-128;
     $('.learn ul').animate({'margin-top':up+'px'},1000);
   },1500);
-
-  // JS for show menu area
-  $('#setting').click(function(){
-    $('#menu').toggle();
-  });
 
 })

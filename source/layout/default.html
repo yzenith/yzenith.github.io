@@ -18,8 +18,8 @@
         <i class="fa fa-arrow-left"> back</i>
       </a>
       <h1>Zhe Yan's Corner</h1>
-      <a href="" class="button">
-        <i class="fa fa-cog" id="setting"></i>
+      <a href="" class="button" id="setting">
+        <i class="fa fa-cog"></i>
       </a>
     </header>
     <div class="show" id="menu">
@@ -28,6 +28,22 @@
       <a href="/work.html">Works</a>
       <a href="#">Blogs</a>
     </div>
+    <script>
+      // window.onload = function(){
+      //   var setting = document.getElementById('setting');
+      //   var menu = document.getElementById('menu');
+      //   setting.onclick = function(){
+      //     menu.style.display = 'block';
+      //     if(menu.style.display=='block'){
+      //       menu.style.display = 'none';
+      //     }
+      //   }
+      // }
+      $('#setting').click(function(){
+        $('#menu').toggle();
+      })
+
+    </script>
     <!-- web-header for more than 800px -->
     <section class="web-header">
       <h1>Zhe Yan's Corner</h1>
