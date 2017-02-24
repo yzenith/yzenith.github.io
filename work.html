@@ -28,21 +28,12 @@
       <a href="/work.html">Works</a>
       <a href="#">Blogs</a>
     </div>
-    <script>
-      // window.onload = function(){
-      //   var setting = document.getElementById('setting');
-      //   var menu = document.getElementById('menu');
-      //   setting.onclick = function(){
-      //     menu.style.display = 'block';
-      //     if(menu.style.display=='block'){
-      //       menu.style.display = 'none';
-      //     }
-      //   }
-      // }
-      $('#setting').click(function(){
-        $('#menu').toggle();
+    <script type="text/javascript">
+      $(function(){
+        $('.button').eq(1).click(function(){
+          $('.show').eq(0).toggle();
+        })
       })
-
     </script>
     <!-- web-header for more than 800px -->
     <section class="web-header">
@@ -60,54 +51,52 @@
         <i class="fa fa-user"><span>About</span></i>
       </a>
     </section>
-    .
     <!-- content sction -->
     <div class="content">
 
 <section class="skills">
-  <!-- linux -->
+  <!-- chinese recipes -->
   <div class="card">
-    <img src="assets/linux.jpg" alt="linux">
+    <a href="http://www.chinesefoodsrecipe.com"><img src="assets/work-logo/chineserecipe-logo.png" alt="chinese"></a>
     <div class="text">
-      <p>From smartphones to cars, supercomputers and home appliances, the Linux operating system is everywhere.</p>
+      <p>This is my personal blog for share cooking staff and place to test Google Organic Ranking.</p>
     </div>
   </div>
-  <!-- html -->
+  <!-- fishing -->
   <div class="card">
-    <img src="assets/html7.jpg" alt="html7">
+    <a href="http://montymanfishing.com/"><img src="assets/work-logo/fishing_300.png" alt="fishing"></a>
     <div class="text">
-      <p>HTML is the standard markup language for creating Web pages.</p>
+      <p>This is a simply WordPress site for client. It have few basic keywords optimation.</p>
     </div>
   </div>
-  <!-- sublime -->
+  <!-- sushi -->
   <div class="card">
-    <img src="assets/subl.jpg" alt="subl">
+    <a href="http://www.sotosushibar.com/"><img src="assets/work-logo/Soto-sushi-logo.png" alt="long island sushi"></a>
     <div class="text">
-      <p>Sublime Text is a sophisticated text editor for code, markup and prose.</p>
+      <p>This is a simply WordPress site for sushi client who also need local keywords optimation.</p>
     </div>
   </div>
-  <!-- github -->
+  <!-- summer -->
   <div class="card">
-    <img src="assets/github.jpg" alt="github">
+    <a href="http://summer-creations.com/"><img src="assets/work-logo/summer-creation.jpg" alt="summer creation"></a>
     <div class="text">
-      <p>Using the Hello World guide, you’ll create a repository, start a branch,
-write comments, and open a pull request.</p>
+      <p>This site made by WordPress and Woo-commerce plugin setting.</p>
     </div>
   </div>
-  <!-- online payment -->
+  <!-- tony -->
   <div class="card">
-    <img src="assets/zhifu.png" alt="zhifu">
+    <img src="assets/work-logo/taos-logo.png" alt="taos fusion">
     <div class="text">
-      <p>Experience fast, easy and safe online payments</p>
+      <p>This a restaurant site made by WordPress for my friend Tony.</p>
     </div>
   </div>
   <!-- rails -->
-  <div class="card">
+  <!-- <div class="card">
     <img src="assets/rails10.jpg" alt="rails">
     <div class="text">
       <p>Ruby on Rails is open source software, so not only is it free to use, you can also help make it better.</p>
     </div>
-  </div>
+  </div> -->
 </section>
 
 
@@ -117,7 +106,7 @@ write comments, and open a pull request.</p>
   <a href="index.html">
     <i class="fa fa-home"></i>
   </a>
-  <a href="blog.html">
+  <a href="#">
     <i class="fa fa-book"></i>
   </a>
   <a href="work.html">

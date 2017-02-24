@@ -28,21 +28,12 @@
       <a href="/work.html">Works</a>
       <a href="#">Blogs</a>
     </div>
-    <script>
-      // window.onload = function(){
-      //   var setting = document.getElementById('setting');
-      //   var menu = document.getElementById('menu');
-      //   setting.onclick = function(){
-      //     menu.style.display = 'block';
-      //     if(menu.style.display=='block'){
-      //       menu.style.display = 'none';
-      //     }
-      //   }
-      // }
-      $('#setting').click(function(){
-        $('#menu').toggle();
+    <script type="text/javascript">
+      $(function(){
+        $('.button').eq(1).click(function(){
+          $('.show').eq(0).toggle();
+        })
       })
-
     </script>
     <!-- web-header for more than 800px -->
     <section class="web-header">
@@ -60,7 +51,6 @@
         <i class="fa fa-user"><span>About</span></i>
       </a>
     </section>
-    .
     <!-- content sction -->
     <div class="content">
 
@@ -72,7 +62,7 @@
   <a href="index.html">
     <i class="fa fa-home"></i>
   </a>
-  <a href="blog.html">
+  <a href="#">
     <i class="fa fa-book"></i>
   </a>
   <a href="work.html">
