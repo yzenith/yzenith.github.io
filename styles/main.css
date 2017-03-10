@@ -7,7 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   color: #757575;
   text-shadow: 0 1px 2px #ccc;
-  font-family: fantasy;
+  font-family: monospace;
   font-weight: 700; }
 
 .wrap {
@@ -153,8 +153,7 @@ body {
     width: 100%; }
     .skills .card img {
       max-width: 100%;
-      margin: 0 auto;
-      border: 1px solid #eee; }
+      margin: 0 auto; }
     .skills .card .text {
       margin-top: 15px;
       margin-bottom: 15px;
