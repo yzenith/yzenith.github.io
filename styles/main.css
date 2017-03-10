@@ -5,7 +5,9 @@
 
 body {
   -webkit-font-smoothing: antialiased;
-  color: #757575; }
+  color: #757575;
+  text-shadow: 0 1px 2px #ccc;
+  font-family: fantasy; }
 
 .wrap {
   height: 100vh;
@@ -108,7 +110,7 @@ body {
     color: #B2EBF2;
     padding: 40px; }
     .web-header a:hover {
-      background-color: gray; }
+      background-color: #0097A7; }
     .web-header a .fa {
       font-size: 30px; }
     .web-header a span {
@@ -246,3 +248,12 @@ body {
         text-align: center;
         display: block;
         margin: 0 auto; }
+  @media (min-width: 768px) {
+    .box .skills .detail {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
