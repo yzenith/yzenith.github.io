@@ -219,7 +219,8 @@ body {
       font-size: 20px;
       text-align: center; }
     .box .skills hr {
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      box-shadow: 0 2px 4px #ccc; }
     .box .skills .detail {
       margin: 5px auto;
       text-align: center; }
@@ -248,7 +249,8 @@ body {
       font-size: 20px;
       text-align: center; }
     .box .learn hr {
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      box-shadow: 0 2px 4px #ccc; }
     .box .learn .box {
       overflow: hidden; }
       .box .learn .box ul {
@@ -258,14 +260,41 @@ body {
         margin: 0 auto; }
   .box .learn_pad {
     display: none; }
+  .box .contact {
+    background: #00BCD4;
+    border-radius: 10px;
+    margin: 25px auto; }
+    .box .contact a {
+      text-decoration: none;
+      padding: 15px;
+      color: #FFFFFF;
+      font-size: 30px;
+      font-weight: 700; }
+    .box .contact a:hover {
+      text-decoration: underline; }
   @media (min-width: 768px) {
+    .box .about .des_wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .box .about .des_wrap .description {
+        width: calc(40%);
+        text-align: left; }
+      .box .about .des_wrap .image {
+        width: calc(60%);
+        margin: 10px auto; }
     .box .skills {
       display: none; }
     .box .skills_pad {
       display: block;
       margin-top: 30px; }
       .box .skills_pad hr {
-        margin: 10px; }
+        margin: 10px;
+        box-shadow: 0 2px 4px #ccc; }
       .box .skills_pad img {
         padding: 5px;
         width: calc(33.33333% - 10px);
@@ -285,7 +314,8 @@ body {
       .box .learn_pad h1 {
         text-align: center; }
       .box .learn_pad hr {
-        margin: 10px; }
+        margin: 10px;
+        box-shadow: 0 2px 4px #ccc; }
       .box .learn_pad img {
         padding: 5px;
         width: calc(25% - 10px);
