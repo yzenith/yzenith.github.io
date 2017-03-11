@@ -8,7 +8,7 @@ body {
   color: #757575;
   text-shadow: 0 1px 2px #ccc;
   font-family: monospace;
-  font-weight: 700; }
+  font-weight: 300; }
 
 .wrap {
   height: 100vh;
@@ -42,7 +42,7 @@ body {
     padding: 10px 15px;
     border-radius: 4px; }
   .header h1 {
-    font-size: 22px; }
+    font-size: 16px; }
 
 .header > * {
   text-align: center;
@@ -122,6 +122,8 @@ body {
 @media (min-width: 800px) {
   .web-header {
     display: block; }
+    .web-header h1 {
+      font-size: 22px; }
   .header, .footer {
     display: none; }
   .wrap {
@@ -227,6 +229,12 @@ body {
       .box .skills .detail #skills_0 {
         display: block;
         margin: 0 auto; }
+  .box .skills_pad {
+    display: none; }
+    .box .skills_pad h1 {
+      text-align: center; }
+    .box .skills_pad img {
+      width: calc(33.333%); }
   .box .learn {
     margin: 10px auto;
     padding: 10px;
@@ -248,12 +256,37 @@ body {
         text-align: center;
         display: block;
         margin: 0 auto; }
+  .box .learn_pad {
+    display: none; }
   @media (min-width: 768px) {
-    .box .skills .detail {
+    .box .skills {
+      display: none; }
+    .box .skills_pad {
+      display: block;
+      margin-top: 30px; }
+      .box .skills_pad hr {
+        margin: 10px; }
+      .box .skills_pad img {
+        padding: 5px;
+        width: calc(33.33333% - 10px);
+        box-shadow: 0 3px 6px #ccc; }
+    .box .learn {
+      display: none; }
+    .box .learn_pad {
+      display: block;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: horizontal;
+      -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row; } }
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-top: 30px; }
+      .box .learn_pad h1 {
+        text-align: center; }
+      .box .learn_pad hr {
+        margin: 10px; }
+      .box .learn_pad img {
+        padding: 5px;
+        width: calc(25% - 10px);
+        box-shadow: 0 3px 6px #ccc; } }

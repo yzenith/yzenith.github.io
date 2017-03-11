@@ -55,6 +55,16 @@
       }
     }
   }
+  // skills_pad css
+  .skills_pad {
+    display: none;
+    h1 {
+      text-align: center;
+    }
+    img {
+      width: calc(33.333%);
+    }
+  }
   // learn area css
   .learn {
     margin: 10px auto;
@@ -84,14 +94,48 @@
 
     }
   }
+  .learn_pad {
+    display: none;
+  }
   // for ipad
   @media (min-width: 768px) {
+    // skills area
     .skills {
-
-      .detail {
-        display: flex;
-        flex-direction: row;
+      display: none;
+    }
+    .skills_pad {
+      display: block;
+      margin-top: 30px;
+      hr {
+        margin: 10px;
+      }
+      img {
+        padding: 5px;
+        width: calc(33.33333% - 10px);
+        box-shadow: 0 3px 6px #ccc;
       }
     }
+    // learn area
+    .learn {
+      display: none;
+    }
+    .learn_pad {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+      h1 {
+        text-align: center;
+      }
+      hr {
+        margin: 10px;
+      }
+      img {
+        padding: 5px;
+        width: calc(25% - 10px);
+        box-shadow: 0 3px 6px #ccc;
+      }
+    }
+
   }
 }

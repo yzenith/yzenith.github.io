@@ -24,7 +24,7 @@
     border-radius: 4px;
   }
   h1{
-    font-size: 22px;
+    font-size: 16px;
   }
 }
 .header >*{
@@ -121,6 +121,9 @@
 @media (min-width:800px) {
   .web-header {
     display: block;
+    h1 {
+      font-size: 22px;
+    }
   }
   .header , .footer {
     display: none;

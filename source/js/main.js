@@ -7,10 +7,10 @@ $(function(){
 
     (c==8)?c=0:c;
 
-    $('.detail>img').eq(c).fadeIn(800).siblings('img').hide();
+    $('.detail>img').eq(c).fadeIn(1500).siblings('img').hide();
   }
 
-  timer = setInterval(autoRun,2500);
+  timer = setInterval(autoRun,3000);
 
   // JS for leaning section
   var b = 0;
@@ -23,7 +23,7 @@ $(function(){
 
     };
     var up = b*-128;
-    $('.learn ul').animate({'margin-top':up+'px'},1000);
-  },1500);
+    $('.learn ul').animate({'margin-top':up+'px'},1500);
+  },3000);
 
 })
