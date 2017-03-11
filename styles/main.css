@@ -119,7 +119,7 @@ body {
       margin: 10px;
       font-size: 25px; }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   .web-header {
     display: block; }
     .web-header h1 {
