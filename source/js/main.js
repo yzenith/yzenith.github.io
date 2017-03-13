@@ -1,5 +1,10 @@
 
 $(function(){
+  // JS for menu bar
+    $('#setting').click(function(){
+      $('#menu').toggle();
+
+    });
   // JS for Comfortable area
   var c = 0;
   function autoRun(){
